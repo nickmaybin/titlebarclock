@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace titlebarclock
+namespace TitleBarClock
 {
     static class Program
     {
@@ -14,9 +14,11 @@ namespace titlebarclock
         [STAThread]
         static void Main()
         {
+            Config.SetConfigFile();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TitleBarClock());
+            Application.Run(new Main());
         }
     }
 }

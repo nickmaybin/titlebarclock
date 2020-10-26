@@ -1,6 +1,6 @@
-﻿namespace titlebarclock
+﻿namespace TitleBarClock
 {
-    partial class TitleBarClock
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.

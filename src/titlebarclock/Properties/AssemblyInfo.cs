@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("titlebarclock")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TitleBarClock")]
+[assembly: AssemblyDescription("World Times in a tiny view!")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("titlebarclock")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("nick maybin, nick.maybin@gmail.com")]
+[assembly: AssemblyProduct("Desktop Utils")]
+[assembly: AssemblyCopyright("Copyright © 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

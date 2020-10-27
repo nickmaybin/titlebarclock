@@ -2,15 +2,13 @@
 using Nini.Config;
 using System.Reflection;
 using System.IO;
-using System.Xml.XmlConfiguration;
-using System.Runtime;
 
 namespace TitleBarClock
 {
     class Config
     {
         private static IConfigSource _source;
-
+         
         public static string ApplicationFile { get; private set; }
         private static ConfigSection<ApplicationSection> _timezones;
 

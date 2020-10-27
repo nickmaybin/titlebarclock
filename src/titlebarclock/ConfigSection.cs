@@ -12,7 +12,6 @@ namespace TitleBarClock
             var configFileMap = new ExeConfigurationFileMap { ExeConfigFilename = Config.ApplicationFile };
             var configuration = ConfigurationManager.OpenMappedExeConfiguration(configFileMap, ConfigurationUserLevel.None);
             List = configuration.GetSection(section) as TSection;
-
         }
     }
 }

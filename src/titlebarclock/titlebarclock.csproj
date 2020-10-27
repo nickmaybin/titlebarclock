@@ -51,16 +51,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationSection.cs" />
+    <Compile Include="BlinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlinkLabel.Designer.cs">
+      <DependentUpon>BlinkLabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Config.cs" />
     <Compile Include="ConfigSection.cs" />
+    <Compile Include="HourReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourReminder.Designer.cs">
+      <DependentUpon>HourReminder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MeetingTime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HourReminder.resx">
+      <DependentUpon>HourReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

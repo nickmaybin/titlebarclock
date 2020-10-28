@@ -111,6 +111,7 @@
             this.lblMeetingPlanner.Size = new System.Drawing.Size(13, 13);
             this.lblMeetingPlanner.TabIndex = 5;
             this.lblMeetingPlanner.Text = "=";
+            this.lblMeetingPlanner.Click += new System.EventHandler(this.lblMeetingPlanner_Click);
             // 
             // pbFour
             // 
@@ -180,6 +181,9 @@
             this.Name = "Main";
             this.Text = "TitleBarClock";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Main_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Main_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbFour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTwo)).EndInit();

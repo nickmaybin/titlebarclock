@@ -34,19 +34,22 @@
             // blinkLabel1
             // 
             this.blinkLabel1.AutoSize = true;
-            this.blinkLabel1.ForeColor = System.Drawing.Color.Purple;
-            this.blinkLabel1.Location = new System.Drawing.Point(24, 28);
+            this.blinkLabel1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.blinkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blinkLabel1.Location = new System.Drawing.Point(6, 8);
             this.blinkLabel1.Name = "blinkLabel1";
-            this.blinkLabel1.Size = new System.Drawing.Size(61, 13);
+            this.blinkLabel1.Size = new System.Drawing.Size(87, 25);
             this.blinkLabel1.TabIndex = 0;
-            this.blinkLabel1.Text = "blinkLabel1";
+            this.blinkLabel1.Text = "HH:mm";
+            this.blinkLabel1.Click += new System.EventHandler(this.blinkLabel1_Click);
+            this.blinkLabel1.DoubleClick += new System.EventHandler(this.blinkLabel1_DoubleClick);
             // 
             // HourReminder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(120, 53);
+            this.ClientSize = new System.Drawing.Size(100, 40);
             this.Controls.Add(this.blinkLabel1);
             this.ForeColor = System.Drawing.Color.Chartreuse;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

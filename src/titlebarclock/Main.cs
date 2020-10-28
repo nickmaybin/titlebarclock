@@ -13,6 +13,10 @@ namespace TitleBarClock
 {
     public partial class Main : Form
     {
+        private Point _dragCursorPoint;
+        private Point _dragFormPoint;
+        private bool _dragging;
+
         public Main()
         {
             InitializeComponent();
@@ -62,15 +66,17 @@ namespace TitleBarClock
             NearingReminderTime(55, 22);
             NearingReminderTime(55, 42);
 
-            NearingReminderTime(25, 22);
-            NearingReminderTime(25, 42);
+            NearingReminderTime(24, 22);
+            NearingReminderTime(20, 42);
         }
 
         private void NearingReminderTime(int minute, int second)
         {
             if (DateTime.Now.Minute == minute && DateTime.Now.Second == second)
             {
-                    //pop blink label
+                HourReminder hourReminder = new HourReminder();
+                hourReminder.Show();
+
             }
         }
 
@@ -79,6 +85,34 @@ namespace TitleBarClock
             TopMost = true;
             Show();
             BringToFront();
+        }
+
+        private void Main_MouseDown(object sender, MouseEventArgs e)
+        {
+            _dragging = true;
+            _dragCursorPoint = Cursor.Position;
+            _dragFormPoint = Location;
+
+        }
+
+        private void Main_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_dragging)
+            {
+                Point newLocation = Point.Subtract(Cursor.Position, new Size(_dragCursorPoint));
+                Location = Point.Add(_dragFormPoint, new Size(newLocation));
+            }
+
+        }
+
+        private void Main_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
+        }
+
+        private void lblMeetingPlanner_Click(object sender, EventArgs e)
+        {
+            // pop the meeting planner
         }
     }
 }

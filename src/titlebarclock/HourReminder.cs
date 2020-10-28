@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TitleBarClock
@@ -24,7 +17,8 @@ namespace TitleBarClock
             Top = Screen.PrimaryScreen.Bounds.Height - 80;
             Left = Screen.PrimaryScreen.Bounds.Width - 120;
 
-            blinkLabel1.Text - DateTime.Now.ToString("HH:mm");
+            blinkLabel1.Text = DateTime.Now.ToString("HH:mm");
+            
             AlwaysOnTop();
 
         }
@@ -34,6 +28,15 @@ namespace TitleBarClock
             TopMost = true;
             Show();
             BringToFront();
+        }
+
+        private void blinkLabel1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void blinkLabel1_DoubleClick(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

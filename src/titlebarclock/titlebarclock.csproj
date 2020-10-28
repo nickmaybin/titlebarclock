@@ -65,6 +65,9 @@
     <Compile Include="HourReminder.Designer.cs">
       <DependentUpon>HourReminder.cs</DependentUpon>
     </Compile>
+    <!--<Compile Include="HourReminder.Designer.cs">
+      <DependentUpon>HourReminder.cs</DependentUpon>
+    </Compile>-->
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -112,7 +112,10 @@ namespace TitleBarClock
 
         private void lblMeetingPlanner_Click(object sender, EventArgs e)
         {
-            // pop the meeting planner
+            var planner = new MeetingPlanner();
+            planner.Top = this.Top - planner.Height - 12;
+            planner.Left = this.Left;
+            planner.Show();
         }
     }
 }

@@ -33,11 +33,11 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.lblClose = new System.Windows.Forms.Label();
             this.dgvTimes = new System.Windows.Forms.DataGridView();
-            this.meetingTimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.meetingTimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.meetingTimeBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -80,21 +80,19 @@
             this.dgvTimes.DataSource = this.meetingTimeBindingSource;
             this.dgvTimes.Location = new System.Drawing.Point(2, 13);
             this.dgvTimes.Name = "dgvTimes";
+            this.dgvTimes.ReadOnly = true;
             this.dgvTimes.RowHeadersVisible = false;
             this.dgvTimes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvTimes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTimes.Size = new System.Drawing.Size(370, 213);
             this.dgvTimes.TabIndex = 6;
             // 
-            // meetingTimeBindingSource
-            // 
-            this.meetingTimeBindingSource.DataSource = typeof(TitleBarClock.MeetingTime);
-            // 
             // hKDataGridViewTextBoxColumn
             // 
             this.hKDataGridViewTextBoxColumn.DataPropertyName = "HK";
             this.hKDataGridViewTextBoxColumn.HeaderText = "HK";
             this.hKDataGridViewTextBoxColumn.Name = "hKDataGridViewTextBoxColumn";
+            this.hKDataGridViewTextBoxColumn.ReadOnly = true;
             this.hKDataGridViewTextBoxColumn.Width = 90;
             // 
             // iNDataGridViewTextBoxColumn
@@ -102,6 +100,7 @@
             this.iNDataGridViewTextBoxColumn.DataPropertyName = "IN";
             this.iNDataGridViewTextBoxColumn.HeaderText = "IN";
             this.iNDataGridViewTextBoxColumn.Name = "iNDataGridViewTextBoxColumn";
+            this.iNDataGridViewTextBoxColumn.ReadOnly = true;
             this.iNDataGridViewTextBoxColumn.Width = 90;
             // 
             // lNDataGridViewTextBoxColumn
@@ -109,6 +108,7 @@
             this.lNDataGridViewTextBoxColumn.DataPropertyName = "LN";
             this.lNDataGridViewTextBoxColumn.HeaderText = "LN";
             this.lNDataGridViewTextBoxColumn.Name = "lNDataGridViewTextBoxColumn";
+            this.lNDataGridViewTextBoxColumn.ReadOnly = true;
             this.lNDataGridViewTextBoxColumn.Width = 90;
             // 
             // nYDataGridViewTextBoxColumn
@@ -116,7 +116,12 @@
             this.nYDataGridViewTextBoxColumn.DataPropertyName = "NY";
             this.nYDataGridViewTextBoxColumn.HeaderText = "NY";
             this.nYDataGridViewTextBoxColumn.Name = "nYDataGridViewTextBoxColumn";
+            this.nYDataGridViewTextBoxColumn.ReadOnly = true;
             this.nYDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // meetingTimeBindingSource
+            // 
+            this.meetingTimeBindingSource.DataSource = typeof(TitleBarClock.MeetingTime);
             // 
             // MeetingPlanner
             // 

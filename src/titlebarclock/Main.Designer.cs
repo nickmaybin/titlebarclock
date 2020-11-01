@@ -57,7 +57,6 @@
             this.lblOne.Size = new System.Drawing.Size(34, 13);
             this.lblOne.TabIndex = 0;
             this.lblOne.Text = "00:36";
-            this.toolTip.SetToolTip(this.lblOne, "Hong Kong");
             // 
             // lblTwo
             // 
@@ -68,7 +67,6 @@
             this.lblTwo.Size = new System.Drawing.Size(34, 13);
             this.lblTwo.TabIndex = 1;
             this.lblTwo.Text = "22:06";
-            this.toolTip.SetToolTip(this.lblTwo, "Delhi");
             // 
             // lblThree
             // 
@@ -80,7 +78,6 @@
             this.lblThree.Size = new System.Drawing.Size(57, 13);
             this.lblThree.TabIndex = 2;
             this.lblThree.Text = "16:36:23";
-            this.toolTip.SetToolTip(this.lblThree, "London");
             // 
             // lblFour
             // 
@@ -91,7 +88,6 @@
             this.lblFour.Size = new System.Drawing.Size(34, 13);
             this.lblFour.TabIndex = 3;
             this.lblFour.Text = "16:36";
-            this.toolTip.SetToolTip(this.lblFour, "New York");
             // 
             // lblClose
             // 
@@ -101,6 +97,7 @@
             this.lblClose.Size = new System.Drawing.Size(12, 13);
             this.lblClose.TabIndex = 4;
             this.lblClose.Text = "x";
+            this.toolTip.SetToolTip(this.lblClose, "Close");
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // lblMeetingPlanner
@@ -111,6 +108,7 @@
             this.lblMeetingPlanner.Size = new System.Drawing.Size(13, 13);
             this.lblMeetingPlanner.TabIndex = 5;
             this.lblMeetingPlanner.Text = "=";
+            this.toolTip.SetToolTip(this.lblMeetingPlanner, "Meeting Planner");
             this.lblMeetingPlanner.Click += new System.EventHandler(this.lblMeetingPlanner_Click);
             // 
             // pbFour

@@ -2,6 +2,7 @@
 using Nini.Config;
 using System.Reflection;
 using System.IO;
+using System.Configuration;
 
 namespace TitleBarClock
 {
@@ -19,6 +20,7 @@ namespace TitleBarClock
                 return _timezones ?? (_timezones = new ConfigSection<ApplicationSection>("Timezones"));
             }
         }
+
 
         public static void SetConfigFile()
         {

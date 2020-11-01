@@ -70,4 +70,4 @@ namespace TitleBarClock
             get { return (string)base["flag"]; }
         }
     }
-}
+ }

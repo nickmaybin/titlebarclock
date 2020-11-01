@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.lblClose = new System.Windows.Forms.Label();
             this.dgvTimes = new System.Windows.Forms.DataGridView();
+            this.btnClose = new System.Windows.Forms.Button();
             this.hKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,17 +41,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.meetingTimeBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(455, 424);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "Close";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblClose
             // 
@@ -86,6 +75,17 @@
             this.dgvTimes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTimes.Size = new System.Drawing.Size(370, 213);
             this.dgvTimes.TabIndex = 6;
+            // 
+            // btnClose
+            // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(197, 234);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "btnClose";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // hKDataGridViewTextBoxColumn
             // 
@@ -128,11 +128,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.CancelButton = this.btnCancel;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(372, 227);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvTimes);
             this.Controls.Add(this.lblClose);
-            this.Controls.Add(this.btnCancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MeetingPlanner";
             this.ShowIcon = false;
@@ -148,8 +148,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.DataGridView dgvTimes;
@@ -158,5 +156,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iNDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lNDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nYDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnClose;
     }
 }

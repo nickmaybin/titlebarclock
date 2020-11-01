@@ -83,6 +83,7 @@
     <Compile Include="MeetingTime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
     <EmbeddedResource Include="HourReminder.resx">
       <DependentUpon>HourReminder.cs</DependentUpon>
     </EmbeddedResource>
